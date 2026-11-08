@@ -1,1 +1,137 @@
+/* ==========================================
+   1. التنسيق العام والأساسي للصفحات
+   ========================================== */
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    direction: rtl;
+}
+
+/* ==========================================
+   2. حاوية النماذج (تسجيل الدخول، اتصل بنا، وغيرها)
+   ========================================== */
+.login-container, form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   3. تنسيق النصوص والعناوين
+   ========================================== */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+p {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+/* تنسيق مجموعات الحقول والنصوص التوضيحية داخل النماذج */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: right;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #444;
+    font-weight: bold;
+}
+
+/* ==========================================
+   4. تنسيق حقول الإدخال (Inputs & Textareas)
+   ========================================== */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Cairo', sans-serif;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+}
+
+/* ==========================================
+   5. تنسيق الأزرار (Buttons & Submit)
+   ========================================== */
+button, 
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Cairo', sans-serif;
+    transition: background 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button:hover, 
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* ==========================================
+   6. الأزرار والروابط الثانوية (اتصل بنا / العودة)
+   ========================================== */
+.secondary-btn, 
+a.btn-link {
+    background-color: #008CBA;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    display: block;
+    font-size: 14px;
+    font-family: 'Cairo', sans-serif;
+    transition: background 0.3s ease;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.secondary-btn:hover, 
+a.btn-link:hover {
+    background-color: #007bb5;
+}
 
