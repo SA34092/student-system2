@@ -1,0 +1,103 @@
+/* تنسيق عام لجميع الصفحات لضمان التناسق والترتيب */
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    direction: rtl;
+}
+
+/* حاوية النماذج (تسجيل الدخول، اتصل بنا، وغيرها) */
+.login-container, form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+/* تنسيق العناوين في كل الصفحات */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* تنسيق النصوص التوضيحية والفقرات */
+p {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* تنسيق حقول الإدخال النصية وكلمة السر والبريد */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Cairo', sans-serif;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4CAF50;
+}
+
+/* تنسيق الأزرار الأساسية (دخول، إرسال) */
+button, 
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Cairo', sans-serif;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+button:hover, 
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* تنسيق الأزرار الثانوية (مثل زر اتصل بنا أو العودة) */
+.secondary-btn, 
+a.btn-link {
+    background-color: #008CBA;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    display: block;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.secondary-btn:hover, 
+a.btn-link:hover {
+    background-color: #007bb5;
+}
